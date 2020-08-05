@@ -1,0 +1,421 @@
+@media screen and (max-width: 1330px){
+    .grid{
+        grid-template-columns: repeat(3, minmax(290px, 348px));
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .header{
+        &__phone{
+            &-body{
+                height: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .seo{
+        &__wrap{
+            flex-direction: column-reverse;
+        }
+
+        &__img{
+            
+            min-width: 0;
+            max-width: 700px;
+            width: 100%;
+            margin: 0px auto;
+            margin-bottom: 30px;
+        }
+
+        &__text{
+            max-width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 990px){
+    .header{
+        &__phone{
+            margin-bottom: 0;
+            margin-right: 30px;
+            &-body{
+                font-size: 16px;
+            }
+        }
+
+        &__col{
+            &--big{
+                min-width: 260px;
+            }
+        }
+
+        &__search{
+            margin-right: 30px;
+        }
+
+        &__buttons{
+            height: 60px;
+        }
+
+        &__cart{
+            font-size: 16px;
+            padding: 7px 10px;
+        }
+
+        &__login{
+            font-size: 16px;
+        }
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, minmax(270px, calc(50% - 20px)));
+        grid-gap: 20px;
+    }
+
+    .catalog{
+
+        &__item{
+            &-img{
+                width: 100%;
+                height: auto;
+            }
+            &-desc{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .guaranties{
+        background: #000;
+        .heading{
+            font-size: 18px;
+        }
+
+        &__body{
+            min-height: 220px;
+        }
+
+        &__item{
+            &-paragraph{
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px){
+
+    .title{
+        font-size: 24px;
+    }
+
+    .heading{
+        font-size: 18px;
+    }
+
+    .subheading{
+        font-size: 11px;
+    }
+
+    .header{
+        &__wrap{
+            flex-direction: column;
+            // flex-wrap: wrap;
+        }
+
+        &__col{
+            max-width: 350px;
+            margin-bottom: 10px;
+            justify-content: space-around;
+            &:last-child{
+                justify-content: space-around;
+            }
+        }
+    }
+
+    .mainBanner{
+        &__heading{
+            font-size: 38px;
+        }
+    }
+
+    .header-menu{
+        &__item{
+            font-size: 14px;
+        }
+    }
+
+    .catalog{
+        &__item{
+            &-img{
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+    
+
+    .guaranties{
+        &__body{
+            grid-template-columns: repeat(auto-fit, 100%);
+        }
+
+        &__item{
+            margin-bottom: 30px;
+        }
+
+        &__text{
+            max-width: 410px;
+            margin: 0px auto;
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .header-menu{
+        &__heading{
+            display: flex;
+            &--open{
+                background: #f0f0f0;
+            }   
+        }
+
+        &__list{
+            flex-direction: column;
+            overflow: hidden;
+            height: 0;
+            &--open{
+                display: flex !important;
+                height: 200px !important;
+    
+            }
+        }
+    }
+
+    .mainBanner{
+        &__heading{
+            font-size: 24px;
+
+            margin-bottom: 10px;
+        }
+
+        &__subheading{
+            font-size: 11px;
+        }
+        &__slider{
+            max-width: 350px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            &-wrap{
+                flex-direction: column-reverse;
+            }
+
+            &-bg{
+                width: 100%;
+            }
+            &-item{
+                padding: 0px 15px;
+            }
+
+            &-dots{
+                flex-direction: row;
+                width: 100%;
+                min-height: 30px;
+                margin: 0;
+                margin-top: 30px;
+                margin-left: 10px;
+            }
+            .slick-dots{
+                display: flex;
+                width: 100%;
+                min-height: 30px;
+                li{
+                    button{
+                        font-size: 39px;
+                        line-height: 39px;
+                        flex-direction: row;
+                        &::before, &::after{
+                            // transform: rotate(90deg);
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .wrap{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .title{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .footer{
+        &__item{
+            &-row{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .grid{
+        grid-template-columns: 100%;
+        grid-gap: 10px;
+        &__item{
+            max-width: 450px;
+            width: 100%;
+            margin: 0px auto;
+        }
+    }
+
+    .catalog{
+
+        &__grid{
+            grid-template-rows: repeat(auto-fit, 300px);
+        }
+
+        &__item{
+            height: 100%;
+            max-height: 300px;
+            
+            &-img{
+                width: 100%;
+                height: auto;
+            }
+            &-desc{
+                font-size: 12px;
+            }
+            &--big{
+                grid-column: span 1;
+                .catalog__item-img{
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .discount{
+        &__item--big{
+            grid-column: span 1;
+            .discount__item-wrap{
+                flex-direction: column;
+                background: #000000;
+            }
+
+            .discount__item-desc{
+                bottom: 0;
+                height: min-content;
+                width: 100%;
+                top: unset;
+                left: 0;
+            }
+
+            .heading{
+                letter-spacing: 1.3px;
+            }
+
+            .discount__badge{
+                &--big{
+                    display: none;
+                }
+                &--mobile{
+                    display: block;
+                }
+            }
+
+            .discount__item-img{
+                display: none;
+                &--mobile{
+                    display: block;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            
+        }
+
+        &__pricerow{
+            
+            &--big{
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 0;
+                flex-direction: row;
+                .discount__item-price {
+                    display: flex;
+                    align-items: center;
+                    font-size: 24px;
+                    margin-bottom: 0;
+                    &--old {
+                        font-size: 14px;
+                        margin: 0;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    .guaranties{
+
+        &__title{
+            font-size: 16px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .heading{
+            font-size: 14px;
+        }
+
+        &__item{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            &-icon{
+                margin: 0;
+                margin-bottom: 20px;
+
+            }
+            &-paragraph{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .seo{
+        &__text{
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__row{
+            margin-bottom: 20px;
+        }
+
+        &__bold{
+            margin-bottom: 10px;
+        }
+
+        &__item{
+            margin-bottom: 10px;
+        }
+    }
+}
