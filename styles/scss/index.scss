@@ -128,13 +128,13 @@ $grey: #333232;
         max-width: 100px;
         height: 27px;
         margin-right: 60px;
-
+        
         &-icon {
             min-width: 25px;
             margin-right: 8px;
-            img{
-                width: 100%;
-            }
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 22px;
         }
 
         &-field {
@@ -211,8 +211,9 @@ $grey: #333232;
         margin-right: 50px;
         margin-bottom: 10px;
 
-        img{
+        .icon-phone{
             margin-right: 10px;
+            color: #ffffff;
         }
 
         &-body {
@@ -248,9 +249,8 @@ $grey: #333232;
         font-size: 24px;
         background: $grey;
 
-        img {
-            margin-right: 20px;
-            height: 100%;
+        span {
+            margin-right: 10px;
         }
     }
 
@@ -262,9 +262,9 @@ $grey: #333232;
         text-decoration: none;
         color: #ffffff;
 
-        img {
+        span {
             margin-right: 10px;
-            height: 16px;
+            font-size: 20px;
         }
     }
 }
@@ -528,8 +528,8 @@ $grey: #333232;
                 color: #ffffff;
             }
 
-            img{
-                height: 10px;
+            span.icon-chevron{
+                font-size: 12px;
             }
         }
 
@@ -779,9 +779,10 @@ $grey: #333232;
         &-icon{
             margin-right: 20px;
             width: 40px;
-            // img{
-            //     width: 100%;
-            // }
+            font-size: 38px;
+            .icon-bracelet{
+                font-size: 24px;
+            }
         }
         &-paragraph{
             font-family: 'Graphik';
@@ -859,8 +860,10 @@ $grey: #333232;
         align-items: flex-start;
         margin: 20px 0;
 
-        img {
+        [class^="icon-"], [class*=" icon-"] {
             margin-right: 30px;
+            font-size: 22px;
+            color: #ffffff;
         }
 
         &-body {
