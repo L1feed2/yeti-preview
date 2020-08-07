@@ -189,7 +189,7 @@ $grey: #333232;
             border-radius: 50%;
             position: relative;
             z-index: 2;
-
+            transition: 0.3s;
             &:not(:first-child) {
                 margin-left: -10px;
             }
@@ -200,6 +200,11 @@ $grey: #333232;
 
             &--active {
                 z-index: 3;
+                color: $black;
+                background: $light-bg;
+            }
+
+            &:hover{
                 color: $black;
                 background: $light-bg;
             }
@@ -248,9 +253,14 @@ $grey: #333232;
         color: #ffffff;
         font-size: 24px;
         background: $grey;
-
+        transition: 0.3s;
         span {
             margin-right: 10px;
+        }
+
+        &:hover{
+            color: #000000;
+            background: #ffffff;
         }
     }
 
@@ -261,10 +271,15 @@ $grey: #333232;
         justify-content: center;
         text-decoration: none;
         color: #ffffff;
-
+        border: 1px solid transparent;
+        transition: 0.3s;
         span {
             margin-right: 10px;
             font-size: 20px;
+        }
+
+        &:hover{
+            border-color: #fff;
         }
     }
 }
@@ -501,7 +516,9 @@ $grey: #333232;
     &__item {
         position: relative;
         max-height: 400px;
-
+        &:hover .catalog__item-img{
+            transform: scale(1.1);
+        }
         &-wrap {
             height: 100%;
             display: block;
@@ -539,9 +556,7 @@ $grey: #333232;
             width: auto;
             transform: scale(1.02);
 
-            &:hover {
-                transform: scale(1.1);
-            }
+            
         }
 
         &--big {
@@ -572,7 +587,8 @@ $grey: #333232;
     &__item {
         display: flex;
         flex-direction: column;
-
+        text-decoration: none;
+        color: #ffffff;
         &-img {
             max-height: 290px;
             overflow: hidden;
@@ -582,6 +598,7 @@ $grey: #333232;
                 transition: 0.3s;
             }
         }
+        
 
         &-desc {
             background: #000000;
