@@ -47,10 +47,18 @@ $grey: #333232;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.3px;
-
+    text-decoration: none;
+    color: inherit;
     &--big {
         font-size: 33px;
         letter-spacing: 2.5px;
+    }
+}
+
+a.heading{
+    transition: 0.3s;
+    &:hover{
+        color: #cccccc;
     }
 }
 
@@ -592,12 +600,14 @@ $grey: #333232;
         &-img {
             max-height: 290px;
             overflow: hidden;
-
+            display: block;
             img {
                 width: 100%;
                 transition: 0.3s;
             }
         }
+
+
         
 
         &-desc {

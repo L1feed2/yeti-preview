@@ -38,10 +38,19 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1.3px;
+  text-decoration: none;
+  color: inherit;
 }
 .heading--big {
   font-size: 33px;
   letter-spacing: 2.5px;
+}
+
+a.heading {
+  transition: 0.3s;
+}
+a.heading:hover {
+  color: #cccccc;
 }
 
 .grid {
@@ -478,6 +487,7 @@
 .popular__item-img {
   max-height: 290px;
   overflow: hidden;
+  display: block;
 }
 .popular__item-img img {
   width: 100%;
