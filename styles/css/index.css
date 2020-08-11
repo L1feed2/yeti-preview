@@ -1,7 +1,7 @@
 .wrap {
   max-width: 1530px;
   margin: 0px auto;
-  padding: 0px 10px;
+  padding: 0px 15px;
 }
 
 .logo {
@@ -110,7 +110,7 @@ a.heading:hover {
 .header__wrap {
   display: flex;
   align-items: center;
-  padding: 25px 20px;
+  padding: 25px 15px;
 }
 .header__search {
   display: flex;
@@ -303,6 +303,24 @@ a.heading:hover {
   background: #f0f0f0;
 }
 
+.crumbs {
+  font-family: "Graphik";
+  background: #e6e6e6;
+}
+.crumbs__wrap {
+  padding: 10px 15px;
+}
+.crumbs a {
+  text-decoration: none;
+  color: #4e4e4e;
+}
+.crumbs a:hover {
+  text-decoration: underline;
+}
+.crumbs span {
+  margin: 0px 5px;
+}
+
 .mainBanner {
   background: url(../../img/mainBanner-bg.png);
   background-size: cover;
@@ -364,7 +382,7 @@ a.heading:hover {
   margin-bottom: 5px;
 }
 .mainBanner__wrap {
-  padding: 260px 20px;
+  padding: 260px 15px;
 }
 .mainBanner__slider {
   position: relative;
@@ -636,7 +654,7 @@ a.heading:hover {
   color: #ffffff;
 }
 .guaranties__wrap {
-  padding: 130px 20px;
+  padding: 130px 15px;
 }
 .guaranties__title {
   text-align: left;
@@ -673,7 +691,7 @@ a.heading:hover {
 }
 
 .seo__wrap {
-  padding: 80px 20px;
+  padding: 80px 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -705,9 +723,271 @@ a.heading:hover {
   margin-bottom: 20px;
 }
 
+.card {
+  font-family: "Montserrat";
+}
+.card__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.card__gallery {
+  display: flex;
+  flex-direction: column;
+  max-width: 780px;
+  min-width: 350px;
+  width: 100%;
+  margin-right: 20px;
+}
+.card__gallery .photo-box {
+  width: 100%;
+  margin-bottom: 15px;
+  max-height: 630px;
+  overflow: hidden;
+}
+.card__gallery .photo-box img {
+  width: 100%;
+}
+.card__gallery .thumbs {
+  display: flex;
+  justify-content: space-between;
+}
+.card__gallery .thumbs img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 145px;
+  width: calc(20% - 10px);
+}
+.card__gallery .thumbs img:last-child {
+  margin-right: 0;
+}
+.card__gallery .thumbs img:first-child {
+  margin-left: 0;
+}
+.card__desc {
+  max-width: 650px;
+  width: 100%;
+  flex-shrink: 2;
+}
+.card__desc-top {
+  width: 100%;
+  box-sizing: border-box;
+  background: #f0f0f0;
+  padding: 45px 50px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.card__desc-bottom {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 45px;
+}
+.card__subheading {
+  display: block;
+  font-size: 23px;
+  font-family: "Graphik";
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+.card__heading {
+  font-size: 48px;
+}
+.card__price {
+  font-weight: bold;
+  font-size: 36px;
+  margin: 20px 0;
+}
+.card__red {
+  font-weight: bold;
+  color: #ff1515;
+  margin-bottom: 20px;
+}
+.card__row {
+  display: flex;
+  margin-bottom: 20px;
+}
+.card__row:last-child {
+  margin: 0;
+}
+.card__row > img {
+  margin-right: 20px;
+}
+.card__button {
+  background: #000000;
+  color: #ffffff;
+  min-width: -webkit-max-content;
+  min-width: max-content;
+  padding: 20px 30px;
+  margin-right: 20px;
+  border-color: #000000;
+}
+.card__button:hover {
+  background: #ffffff;
+  color: #000000;
+}
+.card__bold {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: -4px;
+}
+.card__col {
+  margin-right: 40px;
+  font-size: 18px;
+  font-family: "Graphik";
+}
+.card__col li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.desc__title {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.desc__top {
+  background: #f0f0f0;
+}
+.desc__top-body {
+  display: flex;
+  justify-content: space-between;
+}
+.desc__top-img {
+  max-width: 780px;
+  min-width: 350px;
+  width: 100%;
+  margin-right: 20px;
+}
+.desc__top-img img {
+  width: 100%;
+}
+.desc__top-text {
+  max-width: 650px;
+  font-size: 18px;
+  font-family: "Graphik";
+  line-height: 27px;
+  flex-shrink: 2;
+}
+.desc__top-wrap {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.desc__bold {
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-top: 20px;
+}
+.desc__bottom-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.desc__tabs {
+  max-width: 780px;
+  min-width: 350px;
+  width: 100%;
+  margin-right: 20px;
+  font-family: "Montserrat";
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.desc__tabs-item {
+  display: none;
+}
+.desc__tabs-item--active {
+  display: block;
+}
+.desc__tabs-row {
+  font-size: 24px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+.desc__tabs-row--dark {
+  background: #f0f0f0;
+}
+.desc__tabs-row span {
+  display: block;
+  width: 50%;
+}
+.desc__tabs-row .desc__bold {
+  margin: 0;
+}
+.desc__tabs-caption {
+  display: flex;
+  margin-bottom: 60px;
+}
+.desc__tabs-caption li {
+  display: block;
+  margin-right: 50px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  min-width: -webkit-max-content;
+  min-width: max-content;
+}
+.desc__tabs-caption li.active, .desc__tabs-caption li:hover {
+  font-weight: bold;
+  background: #000000;
+  color: #ffffff;
+}
+.desc__black {
+  max-width: 650px;
+  min-width: 400px;
+  height: 100%;
+  background: #000000;
+  color: #ffffff;
+  padding: 50px 65px;
+  box-sizing: border-box;
+  margin: -30px 0;
+}
+.desc__black-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.desc__black-heading {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.desc__black-heading [class^=icon-], .desc__black-heading [class*=" icon-"] {
+  margin-right: 5px;
+  font-size: 20px;
+  display: block;
+  width: 25px;
+}
+.desc__black-heading .icon-delivery {
+  font-size: 16px;
+}
+.desc__black-paragraph {
+  font-family: "Graphik";
+  font-size: 19px;
+  max-width: 510px;
+  line-height: 29px;
+}
+
+.cardRow {
+  background: #E6E6E6;
+}
+.cardRow__wrap {
+  padding: 120px 20px;
+  padding-bottom: 70px;
+}
+
+.loupe {
+  z-index: 100;
+}
+
 .footer {
   background: #0E0E0E;
-  padding: 40px 20px;
+  padding: 40px 15px;
   font-family: "Montserrat";
 }
 .footer__wrap {
@@ -721,7 +1001,8 @@ a.heading:hover {
   align-items: flex-start;
   margin: 20px 0;
 }
-.footer__item [class^=icon-], .footer__item [class*=" icon-"] {
+.footer__item [class^=icon-],
+.footer__item [class*=" icon-"] {
   margin-right: 30px;
   font-size: 22px;
   color: #ffffff;

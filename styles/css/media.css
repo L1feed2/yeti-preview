@@ -2,6 +2,50 @@
   .grid {
     grid-template-columns: repeat(3, minmax(290px, 348px));
   }
+
+  .card__gallery {
+    max-width: 600px;
+  }
+  .card__gallery .photo-box {
+    max-height: 500px;
+  }
+  .card__gallery .thumbs img {
+    max-width: 112px;
+  }
+  .card__desc-top {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .card__col {
+    font-size: 16px;
+  }
+
+  .desc__top-img {
+    max-width: 600px;
+  }
+  .desc__tabs {
+    max-width: 600px;
+  }
+  .desc__tabs-caption {
+    justify-content: space-between;
+  }
+  .desc__tabs-caption li {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .desc__tabs-row {
+    font-size: 16px;
+  }
+  .desc__black {
+    padding: 30px;
+  }
+  .desc__black-heading {
+    font-size: 20px;
+  }
+  .desc__black-paragraph {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 @media screen and (max-width: 1280px) {
   .header__phone-body {
@@ -27,6 +71,21 @@
   .seo__text {
     max-width: 100%;
     margin: 0;
+  }
+
+  .card__heading {
+    font-size: 40px;
+  }
+  .card__subheading {
+    font-size: 20px;
+  }
+  .card__button {
+    padding: 15px 20px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .card__bold {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 990px) {
@@ -80,6 +139,25 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  .desc__top-text {
+    font-size: 14px;
+  }
+  .desc__bottom-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .desc__tabs {
+    max-width: 650px;
+    margin: 0;
+  }
+  .desc__tabs-row {
+    font-size: 14px;
+  }
+  .desc__black {
+    max-width: 650px;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 780px) {
   .title {
@@ -128,6 +206,40 @@
   .guaranties__text {
     max-width: 410px;
     margin: 0px auto;
+  }
+
+  .crumbs {
+    font-size: 14px;
+  }
+
+  .card__wrap {
+    flex-direction: column;
+  }
+  .card__gallery {
+    margin: 0px auto;
+    margin-bottom: 20px;
+    min-width: 0;
+  }
+  .card__gallery .photo-box {
+    margin-bottom: 10px;
+  }
+  .card__desc {
+    margin: 0px auto;
+    max-width: 600px;
+  }
+  .card__desc-top {
+    padding: 15px;
+  }
+
+  .desc__top-body {
+    flex-direction: column;
+  }
+  .desc__top-img {
+    margin: 0px auto;
+    margin-bottom: 20px;
+  }
+  .desc__top-text {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -193,6 +305,49 @@
   .wrap {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .header__phone-body {
+    font-size: 15px;
+  }
+  .header__phone-body a {
+    margin-bottom: 10px;
+  }
+  .header__buttons a {
+    margin-bottom: 10px;
+  }
+  .header__login span {
+    font-size: 14px;
+  }
+
+  .card__subheading {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .card__price {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .card__row img {
+    width: 25px;
+    margin-right: 10px;
+  }
+  .card__button {
+    padding: 10px;
+  }
+  .card__bold {
+    font-size: 11px;
+  }
+  .card__col {
+    font-size: 12px;
+    margin-right: 20px;
+  }
+  .card__col:last-child {
+    margin: 0;
+  }
+
+  .crumbs {
+    display: none;
   }
 
   .title {
@@ -320,5 +475,51 @@
   }
   .seo__item {
     margin-bottom: 10px;
+  }
+
+  .desc__top-text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .desc__top-img {
+    min-width: 0;
+  }
+  .desc__tabs-caption li {
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .desc__tabs {
+    min-width: 0px;
+  }
+  .desc__tabs-caption {
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .desc__tabs-caption li {
+    font-size: 10px;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .desc__tabs-row {
+    font-size: 10px;
+  }
+  .desc__black {
+    min-width: 0px;
+    padding: 20px;
+  }
+  .desc__black-heading {
+    margin-bottom: 10px;
+  }
+  .desc__black-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .desc__black-paragraph {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
