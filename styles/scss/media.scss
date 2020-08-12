@@ -26,6 +26,12 @@
         &__col{
             font-size: 16px;
         }
+
+        &__select{
+            & > span{
+                font-size: 16px;
+            }
+        }
     }
 
     .desc{

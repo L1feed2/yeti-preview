@@ -19,6 +19,9 @@
   .card__col {
     font-size: 16px;
   }
+  .card__select > span {
+    font-size: 16px;
+  }
 
   .desc__top-img {
     max-width: 600px;
