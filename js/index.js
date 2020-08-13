@@ -27,14 +27,23 @@ $('.mainBanner__slider-body').slick({
 var gallery1 = new Gallery('gallery');
 
 
+
 // zoom
-$('.photo-box img').elevateZoom({
+if(document.body.clientWidth < 780){
+  $('.photo-box').removeClass('photo-zoom');
+} else {
+  $('.photo-zoom img').elevateZoom({
     scrollZoom : true,
     easing : true,
-    // zoomWindowWidth:300,
-    // zoomWindowHeight:300
+    zoomWindowWidth:300,
+    zoomWindowHeight:300
 });
+}
 
+
+
+
+// console.log(screen.width);
 
 // tabs
 $('ul.desc__tabs-caption').on('click', 'li:not(.active)', function () {
