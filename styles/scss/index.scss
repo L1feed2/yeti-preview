@@ -8,6 +8,13 @@ $grey: #333232;
     margin: 0px auto;
     padding: 0px 15px;
 }
+img.lazy {
+    opacity: 0;
+}
+img.loaded {
+    opacity: 1;
+    transition: 0.3s;
+}
 
 
 
